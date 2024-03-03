@@ -1,1 +1,11 @@
-
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: echo "Hello, World!"
+      - name: Second Step
+        run: echo "Hello, Leon!"
